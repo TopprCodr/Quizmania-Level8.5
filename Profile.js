@@ -43,7 +43,7 @@ export default function Profile() {
         fetchUsersData();
     }, []);
 
-    //function to functions users data from firebase
+    //function to fetch users data from firebase
     async function fetchUsersData() {
         const loggedUserId = await AsyncStorage.getItem('loggedUserId');
         if (loggedUserId) {
